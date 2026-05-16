@@ -1,0 +1,15 @@
+<div class="lab container">
+    <h1>Bio-code lab</h1>
+    <textarea id="dnaInput"placeholder="paste DNA sequence"></textarea>
+    <div class ="button-group">
+        <button onclick="runAnalysis()">Analyze sequence</button>
+    </div>
+    <div id="results">
+        <p>GC Content: <span id="gc">0</span>%|status:<span id="status">waiting...</span></p> 
+      <p id="protein" style"color:white;font-weight:bold;"></p>
+        <div class="visualizer-Window">
+       <div id="dnaScroll"class="dna-ticker"></div>
+        </div>
+        <script src="script.js"></script></script>
+    </div>
+      </div>
