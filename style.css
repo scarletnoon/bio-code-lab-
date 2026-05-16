@@ -1,0 +1,56 @@
+body {
+    background:linear-gradient(#020111, #050531);
+    color:white;
+    font-family:menospace;
+    text-align:center;
+    padding:20px;
+}
+textarea{
+    width:90%;
+    height:100px;
+    background:rgba(255,255,255,0.1);
+    color:#ffd700;
+    border:1px solid #4b0082;
+    border-radius:10px;
+    padding:10px;
+}
+button{
+    background:#ffd700;
+    color:black;
+    border:none;
+    padding:10px 20px;
+    margin-top:20px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer ;
+}
+results{
+    margin-top:30px;
+    padding:20px;
+    border:1px solid white;
+    box-shadow:0 0 10px #ffd700;
+   .visualizer-Window{
+        width:100%;
+        overflow:hidden;
+        background:rgba(0 0 0 0.5);
+        border:1px solid #ffd700;
+        margin-top:20px;
+        height:40px;
+        display:flex;
+        align-items:center;
+    }
+    .dna-ticker{
+        display:inline-block;
+        min-width:100%;
+        white-space:nowrap;
+        font-family:'courierNew',monospace
+        font-size:1.2rem;
+        color:#00ff09;
+        text-shadow:0 0 5px #00ff00;
+        animation:dnaMove 10s linear infinite;
+    } 
+    @keyframes dnaMove{
+        0%{ transform: translateX (100%); }
+        100%{ transform: translateX (-100%); }
+    } 
+}
